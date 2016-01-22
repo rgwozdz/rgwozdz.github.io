@@ -51,3 +51,35 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+
+@import url(https://fonts.googleapis.com/css?family=PT+Serif:400,700,700italic,400italic);
+
+$googFont: 'PT Serif';
+
+header {
+  padding: 1.5rem 0;
+
+  .wrapper {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.19);
+    padding-bottom: 12px;
+  }
+  .avatar {
+    width: 175px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
+
+  .site-title {
+    float: none;
+    font-family: $googFont;
+    font-size: 45px;
+    display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
+    margin-left: 20px;
+
+  }
+}
+
+
