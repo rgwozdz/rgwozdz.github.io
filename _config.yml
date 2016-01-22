@@ -9,13 +9,15 @@
 title: "Rich Gwozdz"
 firstname: Rich
 lastname: Gwozdz
-email: r.gwozdz@gmail.com
+email: r.gwozdz @ gmail.com
+email_work: rgwozdz @ spatialdev.com
 description: > # this means to ignore newlines until "baseurl:"
   Me and my work
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: ""
+#twitter_username:
 github_username:  rgwozdz
-
+linkedin: https://www.linkedin.com/in/richard-gwozdz-224b7b17
+slideshare: http://www.slideshare.net/RichardGwozdz/presentations
 # Build settings
 markdown: kramdown
