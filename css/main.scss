@@ -53,17 +53,25 @@ $on-laptop:        800px;
 ;
 
 @import url(https://fonts.googleapis.com/css?family=PT+Serif:400,700,700italic,400italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,400italic,600italic,300italic);
 @import "flaticon.css";
 
-$googFont: 'PT Serif';
+$openSans: 'Open Sans';
+$ptSerif: 'PT Serif';
+
+@import "flaticon.css";
+
+
 
 header {
-  padding: 1.5rem 0;
+  padding: 1.5em 0 0;
 
   .wrapper {
     border-bottom: 2px solid rgba(0, 0, 0, 0.20);
     padding-bottom: 12px;
     position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .avatar {
     width: 175px;
@@ -74,9 +82,9 @@ header {
 
   .site-title {
     float: none;
-    font-family: $googFont;
+    font-family: $ptSerif;
     font-size: 45px;
-    color: rgba(0, 0, 0, 0.60);
+    color: rgba(0, 0, 0, 0.70);
     display: inline-block;
     line-height: 1;
     vertical-align: middle;
@@ -87,6 +95,7 @@ header {
   }
   .subtitle {
     font-size: 16px;
+    font-family: $openSans;
   }
 
   .links {
@@ -95,7 +104,7 @@ header {
       display: inline-block;
       margin: 20px 5px 0;
       font-size: 20px;
-      color: rgba(0,0,0,.6);
+      color: rgba(0,0,0,.7);
 
       &:hover {
         color: rgba(0,0,0,.85);
@@ -116,14 +125,19 @@ header {
   }
 }
 
-
-.soc a {
-  position: relative;
-  height: 96px;
-  height: 9.6rem;
-  width: 96px;
-  width: 9.6rem;
+.page-content {
+  padding: 0;
 }
-.soc a, .soc svg {
-  display: block;
+
+.home {
+
+  section {
+
+    header {
+      padding: 0;
+      font-family: $openSans;
+      font-size: 30px;
+      font-weight: 700;
+    }
+  }
 }
