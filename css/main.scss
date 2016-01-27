@@ -36,8 +36,6 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-
-
 // Use media queries like this:
 // @include media-query($on-palm) {
 //     .wrapper {
@@ -51,16 +49,12 @@ $on-laptop:        800px;
     }
 }
 
-
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
         "layout",
         "syntax-highlighting"
 ;
-
-
 
 
 header {
@@ -144,31 +138,31 @@ header {
       margin-bottom: 12px;
     }
 
-      .highlights {
-        text-align: center;
-        margin-bottom: 16px;
-        > span {
-          padding: 0 20px;
-        }
+    .highlights {
+      text-align: center;
+      margin-bottom: 10px;
+      > span {
+        padding: 0 20px;
       }
+    }
 
     &.skills {
       > ul {
         margin: 0;
-        width: 52%;
         display: inline-block;
-        font-size: 15px;
-
-        &.right {
-          width: 47%;
-        }
+        line-height: 2em;
+        font-size: 14px;
+        text-align: center;
+        width: 100%;
       }
 
       li {
         list-style:none;
+        font-weight: 300;
 
-        > span {
+        .category {
           font-weight: 700;
+          padding-left: 16px;
         }
       }
     }
