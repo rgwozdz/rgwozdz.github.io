@@ -64,10 +64,10 @@ $on-laptop:        800px;
 
 
 header {
+
   padding: 1.5em 0 0;
 
   .wrapper {
-    //border-bottom: 2px solid rgba(0, 0, 0, 0.20);
     margin-bottom: 12px;
     position: relative;
     padding: 0;
@@ -89,7 +89,6 @@ header {
     margin-left: 20px;
     text-decoration: none;
     cursor: pointer;
-
   }
   .subtitle {
     font-size: 16px;
@@ -133,7 +132,6 @@ header {
 
 .home {
 
-
   section {
     margin-bottom: 12px;
 
@@ -146,23 +144,20 @@ header {
       margin-bottom: 12px;
     }
 
-    &.summary {
       .highlights {
         text-align: center;
+        margin-bottom: 16px;
         > span {
           padding: 0 20px;
         }
       }
 
-
-    }
     &.skills {
       > ul {
         margin: 0;
         width: 52%;
         display: inline-block;
         font-size: 15px;
-
 
         &.right {
           width: 47%;
@@ -175,7 +170,6 @@ header {
         > span {
           font-weight: 700;
         }
-
       }
     }
   }
