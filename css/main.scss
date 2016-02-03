@@ -146,6 +146,11 @@ header {
       }
     }
 
+    .narrative {
+      text-align: justify;
+      font-weight: 300;
+    }
+
     &.skills {
       > ul {
         margin: 0;
