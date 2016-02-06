@@ -56,6 +56,19 @@ $on-laptop:        800px;
         "syntax-highlighting"
 ;
 
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
 
 header {
 
@@ -138,38 +151,68 @@ header {
       margin-bottom: 12px;
     }
 
+    .details {
+
+
+
+    }
+
     .highlights {
-      text-align: center;
-      margin-bottom: 10px;
-      > span {
+
+      height: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: justify;
+      -ms-text-justify: distribute-all-lines;
+      text-justify: distribute-all-lines;
+
+      &.second-row {
         padding: 0 20px;
+      }
+      .item{
+        vertical-align: top;
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+      }
+
+      .stretch {
+        width: 100%;
+        display: inline-block;
+        font-size: 0;
+        line-height: 0
       }
     }
 
+    .details {
+      font-size: 17px;
+      font-weight: 300;
+
+      span {
+        font-weight: 700;
+      }
+
+      .left, .right {
+        width: 50%;
+      }
+      .left {
+        float: left;
+      }
+      .right {
+        float:right;
+      }
+      .category {
+        font-weight: 700;
+
+      }
+    }
     .narrative {
+      margin-top: 12px;
       text-align: justify;
       font-weight: 300;
     }
 
-    &.skills {
-      > ul {
-        margin: 0;
-        display: inline-block;
-        line-height: 2em;
-        font-size: 14px;
-        text-align: center;
-        width: 100%;
-      }
 
-      li {
-        list-style:none;
-        font-weight: 300;
-
-        .category {
-          font-weight: 700;
-          padding-left: 16px;
-        }
-      }
-    }
   }
 }
+
