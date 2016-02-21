@@ -140,21 +140,45 @@ header {
 .home {
 
   section {
-    margin-bottom: 12px;
+    margin-bottom: 30px;
 
     header {
-      padding: 0 0 0 10px;
+      padding: 0 0 0 0px;
       font-family: $openSans;
       font-size: 30px;
       font-weight: 700;
-      border-bottom: 3px solid rgba(0, 0, 0, 0.60);
+      border-bottom: 2px solid rgba(0, 0, 0, 0.60);
+      border-top: 4px solid rgba(0, 0, 0, 0.6);
       margin-bottom: 12px;
     }
 
-    .details {
+    .company {
+      font-weight: 700;
+      font-size: 20px;
+      font-family: "PT Serif";
+      line-height: 2em;
+    }
 
+    .role {
+      font-weight: 700;
+      line-height: 2em;
+    }
 
+    .role-details {
+      margin-left: 5px;
+      font-weight: 300;
+      margin-bottom: 20px;
+      
+      > li {
 
+        line-height: 2.0em;
+        font-weight: 300;
+        list-style-position: inside;
+      }
+    }
+
+    .single-line-summary {
+      line-height: 2em;
     }
 
     .highlights {
@@ -187,6 +211,7 @@ header {
     .details {
       font-size: 17px;
       font-weight: 300;
+      line-height: 1.7em;
 
       span {
         font-weight: 700;
