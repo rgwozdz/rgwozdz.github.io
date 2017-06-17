@@ -22,7 +22,7 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       rgba(0, 0, 0, 0.60);
+$text-color:       #606060;
 $background-color: #ffffff;
 $brand-color:      #2a7ae2;
 
@@ -150,36 +150,60 @@ header {
     header {
       padding: 0 0 0 0px;
       font-family: $openSans;
-      font-size: 30px;
-      font-weight: 700;
+      font-size: 18px;
+      color: #606060;
+      //font-weight: 700;
       border-bottom: 2px solid rgba(0, 0, 0, 0.60);
-      border-top: 4px solid rgba(0, 0, 0, 0.6);
-      margin-bottom: 12px;
+      //border-top: 4px solid rgba(0, 0, 0, 0.6);
+      margin-bottom: 6px;
+    }
+
+    .position {
+      padding-left: 2px;
+      margin-top: 12px;
+    }
+
+    .project {
+      padding-left: 12px;
+      margin-top: 0.5em;
+      color: rgba(23, 87, 120, 0.75);
+      font-size: 18px;
+    }
+
+    .single-line-summary {
+      padding-left: 18px;
+      font-weight: 700;
     }
 
     .company {
-      font-weight: 700;
-      font-size: 20px;
-      font-family: "PT Serif";
       line-height: 2em;
     }
 
     .role {
       font-weight: 700;
+      font-size: 20px;
+      font-family: $openSans;
       line-height: 2em;
     }
 
+    .dates {
+      float: right;
+      vertical-align: bottom;
+      padding-top: 9px;
+    }
+
     .role-details {
-      margin-left: 5px;
+      margin-left: 46px;
       font-weight: 300;
-      margin-bottom: 20px;
+      margin-bottom: 0px;
+      font-size: 15px;
 
       > li {
 
         line-height: 2.0em;
         font-weight: 300;
-        list-style-position: inside;
-        list-style-type: circle;
+        //list-style-position: inside;
+        list-style-type: disc;
       }
     }
 
@@ -215,9 +239,10 @@ header {
     }
 
     .details {
-      font-size: 17px;
+      font-size: 15px;
       font-weight: 300;
       line-height: 1.7em;
+      //padding-left: 12px;
 
       span {
         font-weight: 700;
@@ -234,7 +259,6 @@ header {
       }
       .category {
         font-weight: 700;
-
       }
     }
 
@@ -245,27 +269,11 @@ header {
     }
 
     .ed-item {
-
-      > span {
-
-        &:first-child {
-          font-weight: 700;
-        }
-
-        &:last-child {
-          float:right;
-        }
-        font-family: $ptSerif;
-        font-size: 16px;
-      }
-
-    }
-
-    .ed-item-details {
-      font-weight: 300;
-      margin-bottom: 10px;
       font-size: 15px;
+      font-weight: 300;
+      line-height: 1.75em;
     }
+
 
   }
 }

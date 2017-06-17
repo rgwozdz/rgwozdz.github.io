@@ -4,87 +4,115 @@ layout: default
 
 <div class="home">
   <section class="about">
-    <header>about</header>
-    <div class="highlights">
-      <span class="item">REST APIs</span>
-      <span class="item">&#9679</span>
-      <span class="item">web applications</span>
-      <span class="item">&#9679</span>
-      <span class="item">server provisioning & IT automation</span>
-      <span class="item">&#9679</span>
-      <span class="item">geo-spatial data</span>
-      <span class="stretch"></span>
-    </div>
-    <div class="highlights second-row">
-      <span class="item">solution architecture</span>
-      <span class="item">&#9679</span>
-      <span class="item">MVC</span>
-      <span class="item">&#9679</span>
-      <span class="item">identity management</span>
-      <span class="item">&#9679</span>
-      <span class="item">data visualization</span>
-      <span class="stretch"></span>
-    </div>
-    <div class="narrative">Fullstack web engineer that gives special attention to the server-tier. Work includes data
-      APIs, security and permission patterns, identity management, unit and integration testing,
-      DevOps and IT automation, and database development.  Deep experience with the browser-tier as well,
-      including applications  rich in data, visualizations, and spatial technologies. Adaptable and productive,
-      with a passion for implementing best practices, and creating maintainable, extendable solutions.</div>
+    <header>Summary</header>
+    <div class="narrative">Server-side engineer specializing in Node.js, REST APIs, PostgreSQL/PostGIS, deployment automation, and server-provisioning. Experienced Angular.js developer that has authored apps rich in data visualizations and web-maps. Adaptable and productive, with a passion for best practices.</div>
 
   </section>
   <section class="toolset">
-    <header>toolset</header>
+    <header>Technology Highlights</header>
     <div class="details clearfix">
       <div class="left">
-        <div><span>Server:</span> Node.js, Express.js, Bash</div>
-        <div><span>Web Client:</span> Angular.js, Backbone.js, Vanilla JS</div>
-        <div><span>Database:</span> SQL, PostgreSQL, PostGIS, SQLite</div>
-        <div><span>Automation:</span> Ansible, Vagrant, Grunt.js</div>
+        <div><span>Languages:</span> ES6/JavaScript, SQL, HTML, Scala</div>
+        <div><span>Frameworks:</span> Express, Angular, Mocha, Grunt</div>
+        <div><span>Server Provisioning:</span> Ansible, Bash</div>
+        <div><span>Libraries:</span> Backbone.js, D3.js, Leaflet, JQuery</div>
       </div>
       <div class="right">
-        <div><span>Testing:</span> Mocha, Tape, Karma</div>
-        <div><span>Visualization:</span> D3, Leaflet, Chart.js</div>
-        <div><span>Other:</span> CSS, LESS, Sass, Bootstrap, PHP, Amazon Web Services</div>
+        <div><span>Databases:</span> PostgreSQL/PostGIS, MongoDb, SQLite</div>
+        <div><span>Server Technologies:</span> AWS CLI, NGINX, Apache</div>
+        <div><span>Amazon Web Services:</span> VPC, EC2, RDS, IAM, ELB, S3, Auto-scaling</div>
       </div>
     </div>
   </section>
   <section>
-    <header>experience</header>
-    <div class="company">Spatial Development International</div>
-    <div class="role">Lead Software Developer | 2012 - Present</div>
-    <div class="single-line-summary">Fullstack solution design and implementation for data-rich web applications</div>
+    <header>Work & Project Experience</header>
+    <div class="position"><span class="role">Lead Software Developer, </span><span class="company">Spatial Development International</span><span class="dates">2012 - Present</span></div>
+    <div class="project" style="margin-top: 0;"><strong>Project:</strong> <em>To-WhereMatters</em></div>
+    <div class="single-line-summary">REST API & database development (Node.js & PostgreSQL)</div>
     <ul class="role-details">
-      <li>Developed business data/REST API for social-media style photo-sharing application</li>
-      <li>Designed and implemented visual data explorer application for client's FormHub based data</li>
-      <li>Lead developer of MVP for collecting, visualizing, and curating developing-world property data</li>
-      <li>Rapid-prototyping of data-visualization application for marketing big data-mashups</li>
-      <li>Lead company implemetation of automated server-provisioning and deployments</li>
+      <li>Secured API by leveraging JWT and integrating the Auth0 Authentication API</li>
+      <li>Authored algorithms, queries, functions to deliver “best-fit” results specific to user’s identity</li>
+      <li>Developed spatial queries for results pertinent to user’s location and or location of other content</li>
+      <li>Implemented e2e testing pattern for all CRUD service endpoints</li>
     </ul>
-    <div class="company">GeoEngineers</div>
-    <div class="role">Software Developer | 2011 - 2012</div>
-    <div class="single-line-summary">Browser-tier development for feature-rich, visualization-rich web applications</div>
+    <div class="single-line-summary">AWS infrastructure design and build automation (Ansible, AWS-CLI, and Bash)</div>
     <ul class="role-details">
-      <li>ASP MVC application for monitoring environmental projects: filter data, generate reports/charts</li>
-      <li>ASP MVC application for summarizing financials of client projects: filter by map, generate reports</li>
-      <li>Web-mapping/time-series analysis application for monitoring water from global network of mines</li>
+      <li>Scripted AWS infrastructure of all deployment environments</li>
+      <li>Implemented load balancing, auto-scaling, and database fail-over</li>
+        <li>Implemented sub-networks, security-group linking, and bastions to limit server exposure</li>
     </ul>
-    <div class="company">Oregon State University</div>
-    <div class="role">Software Developer & Analyst | 2009 - 2011</div>
-    <div class="single-line-summary">Desktop applications for processing computational modeling data</div>
+    <div class="project"><strong>Project:</strong> <em>Raster Data Catalog Application</em></div>
+    <div class="single-line-summary">REST API and image-tile server for raster data (Node.js, Scala, Geotrellis, RabbitMQ)</div>
     <ul class="role-details">
-      <li>Developed C# .NET applications to interface with third party computation modeling applications</li>
-      <li>Developed C# .NET applications to parse, package, and analyze computational model data streams</li>
+      <li>Authored image-tile service for serving spatial raster data to web-mapping applications</li>
+      <li>Developed service endpoint to import/process Geotiff rasters as multi-zoom layer tiles</li>
+      <li>Implemented HDFS, Hadoop, Accumulo, and Apache Spark for distributed image processing</li>
+    </ul>
+    <div class="project"><strong>Project:</strong> <em>Apollo Mapping</em></div>
+    <div class="single-line-summary">Open Street Map image-tile server (Ansible, PostgreSQL and Bash)</div>
+    <ul class="role-details">
+      <li>Optimized OSM whole-planet import and tile rendering for minimum hardware specifications</li>
+      <li>Scripted provisioning of servers and external volumes for Tile-Server deployments</li>
+    </ul>
+    <div class="project"><strong>Project:</strong> <em>Ethiopian Agricultural Transformation Agency</em></div>
+    <div class="single-line-summary">REST API & database development (Node.js, PostgreSQL, SQLite)</div>
+    <ul class="role-details">
+      <li>Extended PGRestAPI services for delivery of authenticated webmapping vector-tiles</li>
+      <li>Developed HTTP services and accompanying PostgreSQL views/functions for delivering data to web UI</li>
+      <li>Created custom user-management API for authentication, registration, password reset</li>
+    </ul>
+    <div class="single-line-summary">Web Application (Angular.js, Leafet)</div>
+    <ul class="role-details">
+      <li>Created stateful data-filtering module that leveraged set-intersections for enhanced performance</li>
+      <li>Authored Angular.js service and HTTP interceptor for management of API access-tokens</li>
+      <li>Authored a routing pattern for persisting and sharing application state via URL</li>
+    </ul>
+    <div class="project"><strong>Project:</strong> <em>Cadasta</em></div>
+    <div class="single-line-summary">Web Application / REST API (Angular.js, Node.js)</div>
+    <ul class="role-details">
+      <li>Authored stateful routing pattern that for UI tabs, nested sub-views, and content configuration</li>
+      <li>Data-migration scripts that included recursive functions executing asynchronous database INSERTs</li>
+      <li>Developed API testing pattern with setup/teardown to restore database after CRUD service tests</li>
+    </ul>
+
+    <div class="position" ><span class="role">Web Developer, </span><span class="company">GeoEngineers </span><span class="dates">2011 - 2012</span></div>
+
+    <div class="project"><strong>Project:</strong> <em>Puget Sound Partnership Report Card</em></span></div>
+    <div class="single-line-summary">Web application UI (ASP MVC3 framework, JQuery)</div>
+    <ul class="role-details">
+      <li>Developed dynamic UI for visualization of business data (charts & tables) based on user inputs</li>
+    </ul>
+
+    <div class="project"><strong>Project:</strong> <em>Puget Sound Project Atlas</em></div>
+    <div class="single-line-summary">Web application UI (ASP MVC3 framework, ESRI JavaScript API, JQuery)</div>
+    <ul class="role-details">
+      <li>Developed dynamic UI with web mapping interface for visualizing (charts) financial data</li>
+    </ul>
+
+    <div class="project"><span class="prj-label">Project: </span><span class="prj-value">Freeport McMoRan Mine Monitor</span></div>
+    <div class="single-line-summary">Web application - UI/web-services  (ActionScript, .NET, SQL Server)</div>
+    <ul class="role-details">
+      <li>Developed Flex UI for visualizing water quality data</li>
+      <li>Develop database functions and .NET services for delivering data payloads to Flex application</li>
+    </ul>
+
+    <div class="position" ><span class="role">GIS Developer, </span><span class="company">Institute for Natural Resources</span><span class="dates">2009 - 2011</span></div>
+    <div class="single-line-summary">Web application - UI/web-services  (ActionScript, .NET, SQL Server)</div>
+    <ul class="role-details">
+      <li>Python development of custom GIS tools and scripts for the ArcGIS Desktop environment</li>
+      <li>Authored .NET scripts for pre-processing geo-spatial data for VDDT and PATH software packages</li>
+    </ul>
+
+    <div class="position" ><span class="role">Geospatial/Computational Modeler, </span><span class="company">University of Washington</span><span class="dates">2006 - 2009</span></div>
+    <ul class="role-details">
+      <li>Developed C/C++/Java software for climate-data downscaling and hydrologic/wildfire simulations</li>
     </ul>
 
   </section>
   <section class="education">
-    <header>education</header>
-    <div class="ed-item"><span>Post-Graduate, University of Washington</span><span>Seattle, WA &nbsp;&nbsp;2006 - 2009</span></div>
-    <div class="ed-item-details">Computational modeling and software development for hydrology, climate, and forestry research</div>
-    <div class="ed-item"><span>Master's of Science, Western Washington University</span><span>Bellingham, WA &nbsp;&nbsp;2006</span></div>
-    <div class="ed-item-details">Environmental Science with focus on computational modeling and software development.</div>
-    <div class="ed-item"><span>Bachelor's of Science, Western Washington University</span><span>Bellingham, WA &nbsp;&nbsp;2003</span></div>
-    <div class="ed-item-details">Biology</div>
+    <header>Education</header>
+    <div class="ed-item"><span>M.S., Western Washington University 2006, Environmental Science/Computational Modeling</span></div>
+    <div class="ed-item"><span>B.S., Western Washington University&nbsp;2003, Biology</span></div>
   </section>
 
 
