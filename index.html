@@ -14,11 +14,10 @@ layout: default
       <div class="left">
         <div><span>Languages:</span> ES6/JavaScript, SQL, HTML, Scala</div>
         <div><span>Frameworks:</span> Express, Angular, Mocha, Grunt</div>
-        <div><span>Server Provisioning:</span> Ansible, Bash</div>
-        <div><span>Libraries:</span> Backbone.js, D3.js, Leaflet, JQuery</div>
+        <div><span>Server Provisioning:</span> Docker, Ansible, Bash</div>
       </div>
       <div class="right">
-        <div><span>Databases:</span> PostgreSQL/PostGIS, MongoDb, SQLite</div>
+        <div><span>Databases:</span> PostgreSQL, MongoDB</div>
         <div><span>Server Technologies:</span> AWS CLI, NGINX, Apache</div>
         <div><span>Amazon Web Services:</span> VPC, EC2, RDS, IAM, ELB, S3, Auto-scaling</div>
       </div>
@@ -27,28 +26,31 @@ layout: default
   <section>
     <header>Work & Project Experience</header>
     <div class="position"><span class="role">Lead Software Developer, </span><span class="company">Spatial Development International</span><span class="dates">2012 - Present</span></div>
+    <div class="project"><strong>Project:</strong> <em>Raster Data Catalog Application</em></div>
+    <div class="single-line-summary">REST API and image-tile server for raster data (Node.js, Scala, Geotrellis, RabbitMQ)</div>
+    <ul class="role-details">
+      <li>Authored image-tile service for serving raster data to web-mapping applications</li>
+      <li>Developed REST API to import/process Geotiff rasters as multi-zoom layer tiles</li>
+      <li>Implemented HDFS, Hadoop, Accumulo, and Apache Spark for multiprocessor raster processing</li>
+    </ul>
     <div class="project" style="margin-top: 0;"><strong>Project:</strong> <em>To-WhereMatters</em></div>
-    <div class="single-line-summary">REST API & database development (Node.js & PostgreSQL)</div>
+    <div class="single-line-summary">REST API, data model, AWS infrastructure design and automation (Node.js & Postgres, Ansible)</div>
     <ul class="role-details">
       <li>Secured API by leveraging JWT and integrating the Auth0 Authentication API</li>
       <li>Authored algorithms, queries, functions to deliver “best-fit” results specific to user’s identity</li>
       <li>Developed spatial queries for results pertinent to user’s location and or location of other content</li>
       <li>Implemented e2e testing pattern for all CRUD service endpoints</li>
+      <li>Scripted AWS infrastructure of all deployment environments</li>
+      <li>Implemented load balancing, auto-scaling, and database fail-over</li>
+      <li>Implemented sub-networks, security-group linking, and bastions to limit server exposure</li>
     </ul>
+    <div class="project"><strong>Project:</strong> <em>Apollo Mapping</em></div>
     <div class="single-line-summary">AWS infrastructure design and build automation (Ansible, AWS-CLI, and Bash)</div>
     <ul class="role-details">
       <li>Scripted AWS infrastructure of all deployment environments</li>
       <li>Implemented load balancing, auto-scaling, and database fail-over</li>
-        <li>Implemented sub-networks, security-group linking, and bastions to limit server exposure</li>
+      <li>Implemented sub-networks, security-group linking, and bastions to limit server exposure</li>
     </ul>
-    <div class="project"><strong>Project:</strong> <em>Raster Data Catalog Application</em></div>
-    <div class="single-line-summary">REST API and image-tile server for raster data (Node.js, Scala, Geotrellis, RabbitMQ)</div>
-    <ul class="role-details">
-      <li>Authored image-tile service for serving spatial raster data to web-mapping applications</li>
-      <li>Developed service endpoint to import/process Geotiff rasters as multi-zoom layer tiles</li>
-      <li>Implemented HDFS, Hadoop, Accumulo, and Apache Spark for distributed image processing</li>
-    </ul>
-    <div class="project"><strong>Project:</strong> <em>Apollo Mapping</em></div>
     <div class="single-line-summary">Open Street Map image-tile server (Ansible, PostgreSQL and Bash)</div>
     <ul class="role-details">
       <li>Optimized OSM whole-planet import and tile rendering for minimum hardware specifications</li>
@@ -111,8 +113,8 @@ layout: default
   </section>
   <section class="education">
     <header>Education</header>
-    <div class="ed-item"><span>M.S., Western Washington University 2006, Environmental Science/Computational Modeling</span></div>
-    <div class="ed-item"><span>B.S., Western Washington University&nbsp;2003, Biology</span></div>
+    <div class="ed-item"><span>M.S., Western Washington University 2006</span></div>
+    <div class="ed-item"><span>B.S., Western Washington University&nbsp;2003</span></div>
   </section>
 
 
